@@ -110,3 +110,39 @@
     @apply text-[36px] leading-[48px] font-semibold;
   }
 }
+.p-15 {
+  padding:3.75em;
+}
+
+.pt-15 {
+  padding-top:3.75em;
+}
+
+.pb-15 {
+  padding-bottom:3.75em;
+}
+
+.pl-15 {
+  padding-left:3.75em;
+}
+
+.pr-15 {
+  padding-right:3.75em;
+}
+
+.px-15 {
+  padding-left:3.75em;
+  padding-right:3.75em;
+}
+
+.py-15 {
+  padding-top:3.75em;
+  padding-bottom:3.75em;
+}
+
+.more-details-btn a.flex {
+  background-color:#DC2626;
+  padding:10px 12px;
+  border-radius:4px;
+  border:none;
+}
