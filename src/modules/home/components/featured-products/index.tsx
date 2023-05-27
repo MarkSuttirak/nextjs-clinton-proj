@@ -500,6 +500,22 @@ const FeaturedProducts = () => {
           </div>
         </div>
       </div>
+
+      <div className="bg-gray-700 mt-40">
+        <div className="max-w-7xl py-24 px-6 sm:py-32 lg:px-6 lg:w-1/2">
+          <h2 className="text-4xl font-bold tracking-tight text-white">
+            RAINY SEASON SALE
+            <br />
+            <span id="days">07</span> : <span id="hours">12</span> : <span id="minutes">42</span> : <span id="seconds">59</span>
+          </h2>
+          <p></p>
+          <div className="mt-10 flex items-center gap-x-6">
+            <a href="#" className="text-base font-semibold leading-7 text-white">
+              ดูรายละเอียด <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
