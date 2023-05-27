@@ -1,4 +1,5 @@
 import UnderlineLink from "@modules/common/components/underline-link"
+import { ArrowPathIcon, CalendarIcon, TruckIcon } from '@heroicons/react/24/outline'
 import Image from "next/image"
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
@@ -33,21 +34,9 @@ const Hero = () => {
   ]
 
   const guarantees = [
-    {
-      name: 'สินค้าคุณภาพ',
-      description: "สินค้าผลิตจากวัสดุที่มีคุณภาพ และได้มาตรฐาน CE",
-      imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-delivery-light.svg',
-    },
-    {
-      name: 'รับประกัน 1 ปี',
-      description: 'รับประกันสินค้าสูงสุด 1 ปี',
-      imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-chat-light.svg',
-    },
-    {
-      name: 'บริการ',
-      description: "จัดส่งรวดเร็ว พร้อมดูแลสินค้าตลอดอายุการใช้งาน",
-      imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-fast-checkout-light.svg',
-    },
+    { name: 'สินค้าคุณภาพ', description: 'สินค้าผลิตจากวัสดุที่มีคุณภาพ และได้มาตรฐาน CE', icon: CalendarIcon },
+    { name: 'รับประกัน 1 ปี', description: 'รับประกันสินค้าสูงสุด 1 ปี', icon: ArrowPathIcon },
+    { name: 'บริการ', description: 'จัดส่งรวดเร็ว พร้อมดูแลสินค้าตลอดอายุการใช้งาน', icon: TruckIcon },
   ]
 
   return (
@@ -86,16 +75,19 @@ const Hero = () => {
       </div>
     </div>
     <div className="bg-red-600">
-      <div className="mx-auto max-w-2xl py-24 px-4 sm:px-6 sm:py-16 lg:max-w-7xl lg:px-8">
-        <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8">
-          {guarantees.map((guarantee) => (
-            <div key={guarantee.name}>
-              <img src={guarantee.imageSrc} alt="" className="h-24 w-auto" />
-              <h3 className="mt-6 text-xl font-medium text-white">{guarantee.name}</h3>
-              <p className="mt-2 text-sm text-white">{guarantee.description}</p>
+      <h2 className="sr-only">Our perks</h2>
+      <div className="mx-auto max-w-7xl divide-y divide-gray-200 lg:flex lg:justify-center lg:divide-y-0 lg:divide-x lg:py-16">
+        {guarantees.map((guarantee, perkIdx) => (
+          <div key={perkIdx} className="py-8 lg:w-1/3 lg:flex-none lg:py-0">
+            <div className="mx-auto flex max-w-xs items-center px-4 lg:max-w-none lg:px-8">
+              <guarantee.icon className="h-8 w-8 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+              <div className="ml-4 flex flex-auto flex-col-reverse">
+                <h3 className="font-medium text-white">{guarantee.name}</h3>
+                <p className="text-sm text-white">{guarantee.description}</p>
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
     </>
