@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.6.1",
+    "@heroicons/react": "^2.0.18",
     "@hookform/error-message": "^2.0.0",
     "@medusajs/medusa-js": "^5.0.0",
     "@meilisearch/instant-meilisearch": "^0.7.1",
@@ -30,6 +31,8 @@
     "@stripe/stripe-js": "^1.29.0",
     "@tanstack/react-query": "^4.22.4",
     "clsx": "^1.1.1",
+    "headlessui": "^0.0.0",
+    "heroicons": "^2.0.18",
     "lodash": "^4.17.21",
     "medusa-react": "^8.0.0",
     "next": "^12.3.4",
