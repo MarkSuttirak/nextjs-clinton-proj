@@ -10,6 +10,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { useRouter } from "next/router"
 
 const Nav = () => {
   const products = [
@@ -101,7 +102,7 @@ const Nav = () => {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/about-us" className="text-sm font-semibold leading-6 text-gray-900">
             ABOUT US
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
