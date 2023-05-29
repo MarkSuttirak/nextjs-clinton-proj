@@ -111,6 +111,9 @@ const Nav = () => {
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             E - CATALOG
           </a>
+          <a href="/store" className="text-sm font-semibold leading-6 text-gray-900">
+            STORE
+          </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
